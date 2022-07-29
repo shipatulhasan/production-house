@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Production House - A House of Dreams</title>
+  <!-- Tailwind connection -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            themeYellow: '#FECC02',
+
+          },
+          fontFamily: {
+            bebas: ['Bebas Neue', 'cursive'],
+            montserrat: ['Montserrat', 'sans-serif']
+
+          },
+          backgroundImage: {
+            hero: "url('./images/banner.jpg')",
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Fonts Family -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500&display=swap');
+  </style>
+  <!--  -->
+</head>
+
+<body>
+  <header>
+    <nav class="md:absolute bg-white w-full">
+      <div class="container mx-auto">
+        <div class="flex justify-between items-center px-3 lg:px-10 py-5">
+          <!-- Nav logo -->
+          <div class="brand">
+            <a href="" class="font-bebas text-3xl">
+              Production
+              <span class="text-themeYellow">House</span>
+            </a>
+          </div>
+          <!-- nav menu -->
+          <ul class="flex gap-x-3 font-bebas text-lg">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Subscribe</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero section -->
+    <section class="hero bg-hero bg-no-repeat bg-cover bg-blend-multiply bg-black/50">
+      <div class="container mx-atuo">
+        <div class="row h-[500px] lg:h-screen flex items-center justify-start">
+          <div class="content w-full md:w-9/12 lg:w-7/12 space-y-2 px-5 md:px-12">
+            <h6 class="text-white text-base font-montserrat font-bold tracking-wide pb-1 pt-10">
+              Movie production studio
+            </h6>
+            <h1 class="text-4xl lg:text-7xl font-bebas text-white tracking-wide">
+              Films MAde to<br>
+              <span class="text-themeYellow">Perfection</span>
+            </h1>
+            <p class="text-lg text-white pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+              voluptatibus excepturi at eius omnis? Ut quasi sed veniam! Iure, corrupti.</p>
+            <button class="px-6 py-2 tracking-wider border-2 border-white font-bebas text-white hover:bg-white hover:text-black">
+              <a href="#">Discover more</a>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </header>
+</body>
+
+</html>
